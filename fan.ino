@@ -34,7 +34,7 @@ void loop() {
         }
         else Serial.println("already off");
       default:
-        Serial.println("undefined");
+        pass
      }
    }
 }

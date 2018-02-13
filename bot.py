@@ -10,8 +10,11 @@ import serial
 import telepot
 import time
 
+# Make your own telegram bot by chatting to botfather
+# Get token string, and plug it here
 TOKEN = 'xxxxxxx' # my bot token goes here
 bot = telepot.Bot(TOKEN)
+# I'm using Linux, if you use Windows, you have to replace /dev/ttyUSB part
 arduino = serial.Serial('/dev/ttyUSB1', 9600)
 
 def handle(msg):
